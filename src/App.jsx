@@ -105,7 +105,7 @@ function App() {
               </>
             )}
           </h1>
-          <p>this 2yr old ajja is 19 huh 🥹</p>
+          <p>My 2yr old ajja is 19 huh 🥹</p>
         </section>
 
         <Countdown
