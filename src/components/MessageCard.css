@@ -135,11 +135,11 @@
 
 /* Opened state */
 .curtain-wrapper.opened .curtain-left {
-  transform: translateX(-100%) rotateY(-15deg);
+  transform: translateX(100%) rotateY(15deg);
 }
 
 .curtain-wrapper.opened .curtain-right {
-  transform: translateX(100%) rotateY(15deg);
+  transform: translateX(-100%) rotateY(-15deg);
 }
 
 /* Click hint on curtains */
