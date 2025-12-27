@@ -96,8 +96,8 @@ Happy 19th baccchhhuu!!!! 🥳🥳🥳
       timeline.to(
         curtainLeftRef.current,
         {
-          x: "-100%",
-          rotationY: -rotationAngle,
+          x: "100%",
+          rotationY: rotationAngle,
           duration: duration,
           ease: "power3.inOut",
         },
@@ -107,8 +107,8 @@ Happy 19th baccchhhuu!!!! 🥳🥳🥳
       timeline.to(
         curtainRightRef.current,
         {
-          x: "100%",
-          rotationY: rotationAngle,
+          x: "-100%",
+          rotationY: -rotationAngle,
           duration: duration,
           ease: "power3.inOut",
         },
