@@ -22,7 +22,7 @@
   font-size: 1.6rem;
   margin: 10px 0 20px 0;
   padding-top: max(env(safe-area-inset-top), 10px);
-  color: #e91e63;
+  color: #1e25e9;
   flex-shrink: 0;
 }
 
@@ -150,7 +150,7 @@
   transform: translate(-50%, -50%);
   z-index: 12;
   background: rgba(255, 255, 255, 0.95);
-  color: #e91e63;
+  color: #1e21e9;
   padding: 15px 35px;
   border-radius: 50px;
   font-size: 1.2rem;
@@ -233,7 +233,7 @@
 }
 
 .message-content .typed-text::-webkit-scrollbar-thumb:hover {
-  background: rgba(233, 30, 99, 0.7);
+  background: rgba(71, 30, 233, 0.7);
 }
 
 /* Responsive Design */
