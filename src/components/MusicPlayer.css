@@ -6,8 +6,8 @@
   top: max(env(safe-area-inset-top, 25px), 25px);
   z-index: 100;
   background: rgba(255, 255, 255, 0.98);
-  color: #e91e63;
-  border: 2px solid #e91e63;
+  color: #1e1ee9;
+  border: 2px solid #1e1ee9;
   padding: 12px 20px;
   border-radius: 30px;
   cursor: pointer;
@@ -20,7 +20,7 @@
 }
 
 .music-toggle:hover {
-  background: #e91e63;
+  background: #1e1ee9;
   color: white;
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(233, 30, 99, 0.4);
