@@ -10,7 +10,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  background: linear-gradient(180deg, #ffeef8 0%, #ffe5f1 50%, #ffd6eb 100%);
+  background: linear-gradient(180deg, #eeeeff 0%, #eae5ff 50%, #d9d6ff 100%);
   position: relative;
 }
 
@@ -35,7 +35,7 @@
 .gallery h2 {
   font-size: 2.5rem;
   margin: 0;
-  color: #e91e63;
+  color: #1a039e;
   font-weight: 800;
   text-align: center;
   letter-spacing: -0.5px;
@@ -164,7 +164,7 @@
 }
 
 .lightbox-close:hover {
-  background: rgba(233, 30, 99, 1);
+  background: rgb(33, 30, 233);
   transform: scale(1.1);
 }
 
@@ -195,7 +195,7 @@
 }
 
 .nav-btn:hover {
-  background: rgba(233, 30, 99, 1);
+  background: rgb(64, 30, 233);
   transform: translateY(-50%) scale(1.1);
 }
 
