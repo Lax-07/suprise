@@ -2,7 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-  background: linear-gradient(135deg, #ffd1dc 0%, #ffe6ee 100%);
+  background: linear-gradient(135deg, #5690e8 0%, #6d9ade 100%);
+    text-align: center;
+      color: #333;
+        scroll-behavior: smooth;
+          overflow: hidden;
+            height: 100vh;
+              height: 100dvh; /* Dynamic viewport height for mobile */
+                width: 100vw;
   text-align: center;
   color: #333;
   scroll-behavior: smooth;
@@ -11,6 +18,7 @@ body {
   height: 100dvh; /* Dynamic viewport height for mobile */
   width: 100vw;
   width: 100dvw;
+
   position: fixed;
   animation: fadeIn 800ms ease-out forwards;
   -webkit-font-smoothing: antialiased;
