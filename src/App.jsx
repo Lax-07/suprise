@@ -128,7 +128,7 @@ function App() {
           disabled={!birthdayReached}
           onClick={() => goToPage(2)}
         >
-          🎀 Let's Celebrate
+          🤯 Let's Celebrate
         </button>
       </div>
 
@@ -170,8 +170,8 @@ function App() {
         </button>
         <Gallery isActive={currentPage === 4} />
         <section className="final">
-          <h2 className="final-message">💖 Forever Yours — laddooo 💖</h2>
-          <p className="final-subtitle">keep getting old with me 😋😋</p>
+          <h2 className="final-message">💖 Forever Yours — aapki meethi laddooo 💖</h2>
+          <p className="final-subtitle">keep growing and getting old with me 😋😋</p>
         </section>
       </div>
 
