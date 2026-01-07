@@ -189,7 +189,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
 
   // CHANGE TRACK when message button is clicked (before navigating)
   if (buttonType === "message" && musicPlayerRef && musicPlayerRef.current) {
-    musicPlayerRef.current.setTrackAndPlay("/music/track2.mp3");
+    musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
   }
 
     // Show corresponding decoration with animations
