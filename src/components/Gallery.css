@@ -3,15 +3,14 @@
   display: flex;
   flex-direction: column;    /* stack back-btn, gallery, final */
   align-items: center;       /* center children horizontally */
-  justify-content: flex-start; /* we’ll center gallery via margin, not whole page */
   margin: auto 0;            /* pushes gallery to vertical center of the page */
   padding: 0;
   max-width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
-  min-height: 50dvh;
+  min-height: 70vh;
+  min-height: 70dvh;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
