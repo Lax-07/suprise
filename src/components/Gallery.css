@@ -1,5 +1,11 @@
 /* Gallery Section */
 .gallery {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;    /* stack back-btn, gallery, final */
+  align-items: center;       /* center children horizontally */
+  justify-content: flex-start; /* we’ll center gallery via margin, not whole page */
+  margin: auto 0;            /* pushes gallery to vertical center of the page */
   padding: 0;
   max-width: 150%;
   margin: 0;
