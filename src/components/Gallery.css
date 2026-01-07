@@ -5,8 +5,8 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  height: 500vh;
-  height: 500dvh;
+  height: 1000vh;
+  height: 1000dvh;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -65,7 +65,7 @@
 
 .photos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4px;
   max-width: 1200px;
   width: 100%;
