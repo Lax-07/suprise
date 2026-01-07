@@ -188,7 +188,6 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
       }
     }
    
-
     // Show corresponding decoration with animations
     setTimeout(() => {
       const decoration = document.querySelector(`.decoration-${buttonType}`);
@@ -261,6 +260,10 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
       setTimeout(() => {
         if (onComplete) onComplete();
       }, 1500);
+        // CHANGE TRACK when message button is clicked (before navigating)
+        if( musicPlayerRef && musicPlayerRef.current) {
+         musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
+      }
     }
   };
 
