@@ -184,7 +184,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     // Special handling for music button - play the actual music
     if (buttonType === "music") {
       if (musicPlayerRef && musicPlayerRef.current) {
-        musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
+        musicPlayerRef.current.play();
       }
     }
    
@@ -257,13 +257,14 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
 
     // If message button clicked, navigate to message page
     if (buttonType === "message") {
-      setTimeout(() => {
-        if (onComplete) onComplete();
-      }, 1500);
-        // CHANGE TRACK when message button is clicked (before navigating)
+       // CHANGE TRACK when message button is clicked (before navigating)
         if( musicPlayerRef && musicPlayerRef.current) {
          musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
       }
+      setTimeout(() => {
+        if (onComplete) onComplete();
+      }, 1500);
+       
     }
   };
 
