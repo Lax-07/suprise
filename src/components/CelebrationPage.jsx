@@ -184,7 +184,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     // Special handling for music button - play the actual music
     if (buttonType === "music") {
       if (musicPlayerRef && musicPlayerRef.current) {
-        musicPlayerRef.current.play();
+        musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
       }
     }
    
