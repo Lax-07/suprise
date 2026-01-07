@@ -9,8 +9,8 @@
   display: flex;
   z-index: 20;
   flex-direction: column;
-  min-height: 75vh;
-  min-height: 75dvh;
+  min-height: 72vh;
+  min-height: 72dvh;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -48,7 +48,7 @@
   z-index: 100;
   background: linear-gradient(
     180deg,
-   #648bca 0%,
+   #a5a0f9 0%,
    #d9d6ff 100%
   );
   backdrop-filter: blur(20px) saturate(180%);
