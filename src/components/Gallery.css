@@ -2,7 +2,6 @@
 .gallery {
   display: flex;
   flex-direction: column;    /* stack back-btn, gallery, final */
-  align-items: center;       /* center children horizontally */
   margin: auto 0;            /* pushes gallery to vertical center of the page */
   padding: 0;
   max-width: 100%;
