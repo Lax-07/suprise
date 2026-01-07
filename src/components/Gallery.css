@@ -1,18 +1,17 @@
 /* Gallery Section */
 .gallery {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;    /* stack back-btn, gallery, final */
   align-items: center;       /* center children horizontally */
   justify-content: flex-start; /* we’ll center gallery via margin, not whole page */
   margin: auto 0;            /* pushes gallery to vertical center of the page */
   padding: 0;
-  max-width: 150%;
+  max-width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  height: 80dvh;
+  height: 50vh;
+  height: 50dvh;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
