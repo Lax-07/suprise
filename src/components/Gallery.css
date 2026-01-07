@@ -9,8 +9,8 @@
   display: flex;
   z-index: 20;
   flex-direction: column;
-  min-height: 70vh;
-  min-height: 70dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -33,7 +33,7 @@
 }
 
 .gallery::-webkit-scrollbar-thumb:hover {
-  background: rgba(30, 108, 233, 0.5);
+  background: #1e6ce980;
 }
 
 .gallery h2 {
@@ -48,8 +48,8 @@
   z-index: 100;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.98) 0%,
-    rgba(239, 238, 255, 0.95) 100%
+   #648bca 0%,
+   #1e6ce980 100%
   );
   backdrop-filter: blur(20px) saturate(180%);
   padding: 20px 20px 18px 20px;
