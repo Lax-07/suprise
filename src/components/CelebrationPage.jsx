@@ -152,41 +152,45 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
 
   // Handle button activation
   const handleButtonClick = (buttonType) => {
-    if (activatedButtons[buttonType]) return;
+  if (activatedButtons[buttonType]) return;
 
-    const button = document.querySelector(`[data-button="${buttonType}"]`);
+  const button = document.querySelector(`[data-button="${buttonType}"]`);
 
-    // Button click animation
-    gsap.to(button, {
-      scale: 0.95,
-      duration: 0.1,
-      yoyo: true,
-      repeat: 1,
+  // Button click animation
+  gsap.to(button, {
+    scale: 0.95,
+    duration: 0.1,
+    yoyo: true,
+    repeat: 1,
+    ease: "power2.inOut",
+  });
+
+  // Activate the button
+  setActivatedButtons((prev) => ({ ...prev, [buttonType]: true }));
+
+  // Special handling for lights button
+  if (buttonType === "lights") {
+    setLightsOn(true);
+    gsap.to(".celebration-page", {
+      background:
+        "linear-gradient(135deg, #1a0a1f 0%, #2d1b3d 50%, #1f0f29 100%)",
+      duration: 1.5,
       ease: "power2.inOut",
     });
+    return;
+  }
 
-    // Activate the button
-    setActivatedButtons((prev) => ({ ...prev, [buttonType]: true }));
-
-    // Special handling for lights button
-    if (buttonType === "lights") {
-      setLightsOn(true);
-      // Animate the room darkening
-      gsap.to(".celebration-page", {
-        background:
-          "linear-gradient(135deg, #1a0a1f 0%, #2d1b3d 50%, #1f0f29 100%)",
-        duration: 1.5,
-        ease: "power2.inOut",
-      });
-      return;
+  // Special handling for music button - play the actual music
+  if (buttonType === "music") {
+    if (musicPlayerRef && musicPlayerRef.current) {
+      musicPlayerRef.current.play();
     }
+  }
 
-    // Special handling for music button - play the actual music
-    if (buttonType === "music") {
-      if (musicPlayerRef && musicPlayerRef.current) {
-        musicPlayerRef.current.play();
-      }
-    }
+  // CHANGE TRACK when message button is clicked (before navigating)
+  if (buttonType === "message" && musicPlayerRef && musicPlayerRef.current) {
+    musicPlayerRef.current.setTrackAndPlay("/music/track2.mp3");
+  }
 
     // Show corresponding decoration with animations
     setTimeout(() => {
@@ -254,7 +258,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
         }
       }
     }, 200);
-
+    
     // If message button clicked, navigate to message page
     if (buttonType === "message") {
       setTimeout(() => {

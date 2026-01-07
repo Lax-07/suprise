@@ -58,7 +58,6 @@ const MusicPlayer = forwardRef((props, ref) => {
     },
   }));
 
-
   return (
     <>
       <audio ref={audioRef} loop preload="auto">
