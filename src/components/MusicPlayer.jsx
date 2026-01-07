@@ -62,6 +62,7 @@ const MusicPlayer = forwardRef((props, ref) => {
     <>
       <audio ref={audioRef} loop preload="auto">
         <source src="/music.mp3" type="audio/mpeg" />
+        <source src="/moosic.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
       <button
