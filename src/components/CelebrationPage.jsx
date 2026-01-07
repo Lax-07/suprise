@@ -261,9 +261,10 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
         if( musicPlayerRef && musicPlayerRef.current) {
          musicPlayerRef.current.play("/moosic.mp3");
       }
-      setTimeout(() => {
+      const t1 = gsap.timeline(
+        setTimeout(() => {
         if (onComplete) onComplete();
-      }, 1500);
+      }), 1500);
        
     }
   };
