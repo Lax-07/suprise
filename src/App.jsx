@@ -98,6 +98,7 @@ function App() {
               <>
                 Happy Birthday <span className="highlight">My GDG, Speeddyy, Boosss ke Ownerr!!! </span> 🎂
               </>
+              
             ) : (
               <>
                 Counting down to <span className="highlight">My AJJJAA's</span>{" "}
@@ -154,7 +155,13 @@ function App() {
           ← Back
         </button>
         <MessageCard isActive={currentPage === 3} />
-        <button className="page-nav-btn" onClick={() => goToPage(4)}>
+        <button  className="page-nav-btn" 
+          onClick={() => {
+          if (musicPlayerRef.current) {
+           musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
+          }
+          goToPage(4);
+          }}>
           Last but not the least!!
         </button>
       </div>
