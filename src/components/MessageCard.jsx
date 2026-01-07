@@ -20,10 +20,6 @@ Happy 19th baccchhhuu!!!! 🥳🥳🥳
 
 -your laddooo`;
 
-  if (musicPlayerRef.current) {
-        musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
-      }
-
   // Handle page transitions
   useEffect(() => {
     // Only trigger on transition to active
