@@ -156,12 +156,7 @@ function App() {
         </button>
         <MessageCard isActive={currentPage === 3} />
         <button  className="page-nav-btn" 
-          onClick={() => {
-          if (musicPlayerRef.current) {
-           musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
-          }
-          goToPage(4);
-          }}>
+          onClick={() => goToPage(4)}>
           Last but not the least!!
         </button>
       </div>
