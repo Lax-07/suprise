@@ -140,7 +140,6 @@ function Gallery({ isActive }) {
   return (
     <section className="gallery">
       <h2>📸 The Mainss</h2>
-      <h3>scroll down</h3>
       <div className="photos">
         {photos.map((photo, index) => (
           <img
