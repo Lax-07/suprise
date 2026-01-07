@@ -48,8 +48,8 @@
   z-index: 100;
   background: linear-gradient(
     180deg,
-   #a5a0f9 0%,
-   #d9d6ff 100%
+   #7e99c2 0%,
+   #a1c3f7 100%
   );
   backdrop-filter: blur(20px) saturate(180%);
   padding: 20px 20px 18px 20px;
