@@ -374,7 +374,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="lights"
                   onClick={() => handleButtonClick("lights")}
                 >
-                  💡 Turn On the Lights
+                  💡 Turn Off the Lights
                 </button>
               )}
 
