@@ -259,7 +259,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     if (buttonType === "message") {
        // CHANGE TRACK when message button is clicked (before navigating)
         if( musicPlayerRef && musicPlayerRef.current) {
-         musicPlayerRef.current.play("/moosic.mp3");
+         musicPlayerRef.current.setTrackAndPlay("/moosic.mp3");
       }
       const t1 = gsap.timeline(
         setTimeout(() => {
