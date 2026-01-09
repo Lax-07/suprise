@@ -56,6 +56,18 @@ const MusicPlayer = forwardRef((props, ref) => {
     toggle: () => {
       toggleMusic();
     },
+    setTrackAndPlay: (src) => {
+    console.log("Changing to track:", src);
+    const audio = audioRef.current;
+    if (audio) {
+      audio.pause(); // stop current
+      audio.src = src;
+      audio.load();
+      audio.play().then(() => {
+        setIsPlaying(true);
+      }).catch(e => console.error("Play failed:", e));
+    }
+  }
   }));
 
   return (
