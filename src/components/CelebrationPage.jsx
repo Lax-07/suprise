@@ -23,6 +23,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     balloons: false,
     message: false,
   });
+  const [canNavigate, setCanNavigate] = useState(false);
   const [lightsOn, setLightsOn] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
 
@@ -150,6 +151,28 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     }
   }, [showMessageButton]);
 
+  // ADD THIS ENTIRE useEffect BLOCK HERE (after existing useEffects)
+useEffect(() => {
+  if (!musicPlayerRef?.current?.audioRef?.current) return;
+  
+  const audio = musicPlayerRef.current.audioRef.current;
+  
+  const checkFinished = () => {
+    if (audio.duration && audio.currentTime >= audio.duration - 1) {
+      setCanNavigate(true);
+    }
+  };
+
+  audio.addEventListener('timeupdate', checkFinished);
+  audio.addEventListener('ended', () => setCanNavigate(true));
+
+  return () => {
+    audio.removeEventListener('timeupdate', checkFinished);
+    audio.removeEventListener('ended', () => {});
+  };
+}, [musicPlayerRef]);
+
+
   // Handle button activation
   const handleButtonClick = (buttonType) => {
     if (activatedButtons[buttonType]) return;
@@ -191,6 +214,9 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     // Show corresponding decoration with animations
     setTimeout(() => {
       const decoration = document.querySelector(`.decoration-${buttonType}`);
+      if (buttonType === "message" && !canNavigate) {  // ← ADD THIS AS LINE 2
+       return; // Block navigation until music finishes
+      }
       if (decoration) {
         // Special animation for bunting - slide up from bottom
         if (buttonType === "decorate") {
@@ -254,7 +280,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
         }
       }
     }, 200);
-
+    
     // If message button clicked, navigate to message page
     if (buttonType === "message") {
        // CHANGE TRACK when message button is clicked (before navigating)
@@ -392,11 +418,14 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
               {showMessageButton && (
                 <button
                   className="action-button message-button"
-                  data-button="message"
-                  onClick={() => handleButtonClick("message")}
-                >
+                 data-button="message"
+                 onClick={() => handleButtonClick("message")}
+                 disabled={!canNavigate}
+                 style={{ opacity: canNavigate ? 1 : 0.6 }}>
                   💌 Well, I Have a Message for You Sir Ji
+                 {!canNavigate && <span style={{fontSize: '12px'}}> (🎵 Waiting...)</span>}
                 </button>
+
               )}
             </div>
           </div>
