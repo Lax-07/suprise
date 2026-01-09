@@ -140,10 +140,10 @@ function Gallery({ isActive }) {
   return (
     <section className="gallery">
       <h2>📸 The Mainss</h2>
-      <h4>This section contains a collage, you can click
+      <h4>This section contains a collage, MUST click
         on individual photos and view them, you can also
         (hopefully) download the photos!! if not me will
-        send 😁 hope u like it 🥹
+        send (if u want) 😁 hope u like it 🥹
       </h4>
       <div className="photos">
         {photos.map((photo, index) => (
