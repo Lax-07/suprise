@@ -151,26 +151,23 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     }
   }, [showMessageButton]);
 
-  // ADD THIS ENTIRE useEffect BLOCK HERE (after existing useEffects)
-useEffect(() => {
-  if (!musicPlayerRef?.current?.audioRef?.current) return;
-  
-  const audio = musicPlayerRef.current.audioRef.current;
-  
-  const checkFinished = () => {
+  useEffect(() => {
+  const checkMusicFinished = () => {
+    const audio = musicPlayerRef?.current?.getAudio();  // Use getAudio()
+    if (!audio) return;
+    
     if (audio.duration && audio.currentTime >= audio.duration - 1) {
+      console.log("✅ Music finished! canNavigate = true");
       setCanNavigate(true);
     }
   };
 
-  audio.addEventListener('timeupdate', checkFinished);
-  audio.addEventListener('ended', () => setCanNavigate(true));
-
-  return () => {
-    audio.removeEventListener('timeupdate', checkFinished);
-    audio.removeEventListener('ended', () => {});
-  };
+  // Check every 500ms instead of timeupdate (more reliable)
+  const interval = setInterval(checkMusicFinished, 500);
+  
+  return () => clearInterval(interval);
 }, [musicPlayerRef]);
+
 
 
   // Handle button activation

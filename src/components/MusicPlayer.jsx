@@ -68,7 +68,8 @@ const MusicPlayer = forwardRef((props, ref) => {
         setIsPlaying(true);
       }).catch(e => console.error("Play failed:", e));
     }
-  }
+    },
+   getAudio: () => audioRef.current
   }));
 
   return (
