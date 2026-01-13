@@ -12,13 +12,55 @@ function MessageCard({ isActive }) {
   const curtainRightRef = useRef(null);
   const curtainHintRef = useRef(null);
   const messageContentRef = useRef(null);
-  const message = `My very very speciall GDG guyyy,
+  const message = `My very very very very speciall GDG guyyy,my bbaaccchhuuuu, nd most importantly MY MR. SHREYAS MAJUNATAHA,
+ i can't believe you are already 19 😭😭😭😭 dk why suddenly mom energy i am having but DAMN 😭😭😭😭😭,
 
-can't believe you are already 19 😭😭
+ you have grown so much in the past yrs 🥹🥹🥹, and im proud of you!!!!, uk uk uk 
+ seeing u grow frm a 15 yr old chotusa baccchuu to a 19 yr old feels like idk 😭😭
+ u were 15 w a pineapple cut and now 19 w chidiya ka ghosla, thts sm great growth uk 😭😭 but yeh no jokes apart,
+ this is ur last teenage year uk, ek yesr nd ull become a 20 bacchaa 🥹🥹 (olllddd aaajjjjaaaaa 😁😂)
 
-Happy 19th baccchhhuu!!!! 🥳🥳🥳
+ u went frm saying "ill drop out nd become f1 driver", to cracking mains, qualifying advance (WHICH EVEN IF U DONT AGREE IS DAMN COOL),
+ joining gdg (one of the highest rankin student club!!!!)
 
--your laddooo`;
+ seeing you grow aise makes me bery happy and very proud and i know for a fact ki future shreyas is goonnaa become a great prsn and
+ achieve all his dreams!!
+
+ keep working hard bacchuu and remember no matter what anyone says SHREYAS IS THE BEST!!(even if u dont believe it) 
+       FAXS IS FAX AND YOU CANNOT CHANGE IT!!
+
+ and smile more kiiiddddoooo, you lookkk sooo cutu while smiling 🫠🫠🫠🫠🫠 like a chotusa happy lil monkey 😭😭🫠🫠😭🫠😭🫠
+
+
+ have an awesome year!! may all ur wishes come true!! and also do mistakes, learn frm em but never think of urself as meh or avg or anytg 
+ IF U EVEN DARE TO DO SMTG LIKE THAT THEN U SEE!!!!!!!!
+
+ remember kiddoooo no matter how old u grow you are still gonna be tht 15yr shreyas i met alomost 4 yrs ago for me, and no matter what 
+ I ALWAYS TRUST YOU AND I AM VERY VERY PROUD OF YOU
+ I AM GLAD TO HAVE YOU AS MY BOYFRIEND, I WISH ITS ME AND YOU IN EVERY LIFE 
+ 
+ also abhi tho bass teen saal hue hai, ye annoyin bacchi is gonna annoy u for a lot more longerrr
+
+ I LOVE YOU ALOT AND I SRSLY ADMIRE U HOW I ADMIRE THE MOON 
+
+ keep growing successfulll aise hi!!!!but han uske saath TAKE CARE OF UR HEALTH ALSO, PAGALPANTI W HEALTH NAI CHALEGI!!!!!!
+
+ HAPPPPYYYY 19 ONCEEE AGAINN SHREEUU 🥳🥳🥳🥳🥳🥳
+ have an delightful day, a wonderful week, a marvelous month and a youthful year!!!!
+
+ remember this bandi is always gonna be here no matter what 
+ LOTS OF LOVVVEE 🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂😘😘😘😘😘😘😘🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰😘🥰😘
+ YOU MEAN ALOT TO ME
+ YOU MATTER ALOT TO ME 
+ AND EVEN IF IT DOESNT SEEM LIKE IT BUT IM VERY VERY VERY PROUD OF YOU 
+ AND YOU ARE A VERY VERY VERY VERY VERY SPECIAL KIIIDDDDDOOOOOO
+
+ HAPPYYYY 19 MUSSCCLLEE DAADDDYYYY 🫂🫂🫂🫂🫂😘🥰🥰🥰🥰🫂🥰😘🫂🥰😘🫂😘😘🥰🫂
+
+ its too late now i shld prolly sleep, varna ull scold me morning so..........
+
+ .....singing off
+ ~your laddooo`;
 
   // Handle page transitions
   useEffect(() => {
