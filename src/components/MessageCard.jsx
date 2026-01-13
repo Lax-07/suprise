@@ -21,7 +21,7 @@ function MessageCard({ isActive }) {
  this is ur last teenage year uk, ek yesr nd ull become a 20 bacchaa 🥹🥹 (olllddd aaajjjjaaaaa 😁😂)
 
  u went frm saying "ill drop out nd become f1 driver", to cracking mains, qualifying advance (WHICH EVEN IF U DONT AGREE IS DAMN COOL),
- joining gdg (one of the highest rankin student club!!!!)
+ and joining gdg (one of the highest rankin student club!!!!)
 
  seeing you grow aise makes me bery happy and very proud and i know for a fact ki future shreyas is goonnaa become a great prsn and
  achieve all his dreams!!
@@ -55,12 +55,12 @@ function MessageCard({ isActive }) {
  AND EVEN IF IT DOESNT SEEM LIKE IT BUT IM VERY VERY VERY PROUD OF YOU 
  AND YOU ARE A VERY VERY VERY VERY VERY SPECIAL KIIIDDDDDOOOOOO
 
- HAPPYYYY 19 MUSSCCLLEE DAADDDYYYY 🫂🫂🫂🫂🫂😘🥰🥰🥰🥰🫂🥰😘🫂🥰😘🫂😘😘🥰🫂
+ HAPPYYYY 19 MMMYYY (abhi thodu giggly giggly) MUSSCCLLEE DAADDDYYYY 🫂🫂🫂🫂🫂😘🥰🥰🥰🥰🫂🥰😘🫂🥰😘🫂😘😘🥰🫂
 
  its too late now i shld prolly sleep, varna ull scold me morning so..........
 
  .....singing off
- ~your laddooo`;
+ ~your laddooo 😽😽`;
 
   // Handle page transitions
   useEffect(() => {
