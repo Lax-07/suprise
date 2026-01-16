@@ -29,7 +29,9 @@ function MessageCard({ isActive }) {
  keep working hard bacchuu and remember no matter what anyone says SHREYAS IS THE BEST!!(even if u dont believe it) 
        FAXS IS FAX AND YOU CANNOT CHANGE IT!!
 
- and smile more kiiiddddoooo, you lookkk sooo cutu while smiling 🫠🫠🫠🫠🫠 like a chotusa happy lil monkey 😭😭🫠🫠😭🫠😭🫠
+ be happyy!!!!!! and smile more kiiiddddoooo, you lookkk sooo cutu while smiling 🫠🫠🫠🫠🫠 like a chotusa happy lil monkey 😭😭🫠🫠😭🫠😭🫠
+ you work very hard, nd even if it feels like its never enough THEN JUST REMEMBER KI ONE DAY ITS ALL GONNA PAY OFF!!!!!! no hard work goes in vain and nor will yours!!!!!
+ enjoyy the presentt bacchuuu nd dw abt the future! cuz ik tht the person reading this is more than capable of overcoming all the difficulties and becoming everytg he is ever dreamed of!!!!
 
 
  have an awesome year!! may all ur wishes come true!! and also do mistakes, learn frm em but never think of urself as meh or avg or anytg 
