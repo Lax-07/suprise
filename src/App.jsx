@@ -15,13 +15,6 @@ gsap.registerPlugin(ScrollToPlugin);
 function App() {
   const [currentPage, setCurrentPage] = useState(1); // Start at 1 for Countdown page
 
-  // ⚠️ FOR TESTING: Comment out lines 18-21 to reset on every reload
-  // Check localStorage to persist birthday reached state
-  //const [birthdayReached, setBirthdayReached] = useState(() => {
-    //const saved = localStorage.getItem("birthdayReached");
-    //return saved === "true";
-  //});
-
   // ✅ FOR TESTING: Uncomment this line to always show countdown on reload
   const [birthdayReached, setBirthdayReached] = useState(false);
 
@@ -96,7 +89,7 @@ function App() {
           <h1 id="heroTitle">
             {birthdayReached ? (
               <>
-                Happy Birthday <span className="highlight">My GDG, Speeddyy, Boosss ke Ownerr!!! </span> 🎂
+                Happy Birthday <span className="highlight">My GDG, Speeddyy, Boosss, Waagyyyy booiii ke Ownerr!!! </span> 🎂
               </>
               
             ) : (
