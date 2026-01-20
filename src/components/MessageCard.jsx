@@ -15,7 +15,7 @@ function MessageCard({ isActive }) {
   const message = `My very very very very speciall GDG guyyy,my bbaaccchhuuuu, nd most importantly MY MR. SHREYAS MAJUNATAHA,
  i can't believe you are already 19 😭😭😭😭 dk why suddenly mom energy i am having but DAMN 😭😭😭😭😭,
 
- you have grown so much in the past yrs 🥹🥹🥹, and im proud of you!!!!, uk uk uk 
+ you have grown so much in the past yrs 🥹🥹🥹, and im so so so soooooooo sooooo proud of you!!!!, uk uk uk 
  seeing u grow frm a 15 yr old chotusa baccchuu to a 19 yr old feels like idk 😭😭
  u were 15 w a pineapple cut and now 19 w chidiya ka ghosla, thts sm great growth uk 😭😭 but yeh no jokes apart,
  this is ur last teenage year uk, ek yesr nd ull become a 20 bacchaa 🥹🥹 (olllddd aaajjjjaaaaa 😁😂)
