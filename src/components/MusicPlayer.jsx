@@ -78,13 +78,6 @@ const MusicPlayer = forwardRef((props, ref) => {
       <source src="/music.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-      <button
-        className="music-toggle"
-        onClick={toggleMusic}
-        aria-label={isPlaying ? "Pause music" : "Play music"}
-      >
-        {isPlaying ? "⏸ Pause Music" : "🎵 Play Music"}
-      </button>
     </>
   );
 });
